@@ -1,0 +1,32 @@
+.Tomorrow {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(8, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.Hour0 { grid-area: 1 / 1 / 2 / 2; }
+.Hour1 { grid-area: 1 / 2 / 2 / 3; }
+.Hour2 { grid-area: 1 / 3 / 2 / 4; }
+.Hour3 { grid-area: 2 / 1 / 3 / 2; }
+.Hour4 { grid-area: 2 / 2 / 3 / 3; }
+.Hour5 { grid-area: 2 / 3 / 3 / 4; }
+.Hour6 { grid-area: 3 / 1 / 4 / 2; }
+.Hour7 { grid-area: 3 / 2 / 4 / 3; }
+.Hour8 { grid-area: 3 / 3 / 4 / 4; }
+.Hour9 { grid-area: 4 / 1 / 5 / 2; }
+.Hour10 { grid-area: 4 / 2 / 5 / 3; }
+.Hour11 { grid-area: 4 / 3 / 5 / 4; }
+.Hour12 { grid-area: 5 / 1 / 6 / 2; }
+.Hour13 { grid-area: 5 / 2 / 6 / 3; }
+.Hour14 { grid-area: 5 / 3 / 6 / 4; }
+.Hour15 { grid-area: 6 / 1 / 7 / 2; }
+.Hour16 { grid-area: 6 / 2 / 7 / 3; }
+.Hour17 { grid-area: 6 / 3 / 7 / 4; }
+.Hour18 { grid-area: 7 / 1 / 8 / 2; }
+.Hour19 { grid-area: 7 / 2 / 8 / 3; }
+.Hour20 { grid-area: 7 / 3 / 8 / 4; }
+.Hour21 { grid-area: 8 / 1 / 9 / 2; }
+.Hour22 { grid-area: 8 / 2 / 9 / 3; }
+.Hour23 { grid-area: 8 / 3 / 9 / 4; }

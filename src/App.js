@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import News from './components/News.js'
+import Weather from './components/Weather.js'
+import {useEffect, useState} from "react"
 
 function App() {
+  const [newsData, setNewsData] = useState();
+  const [weatherData, setWeatherData] = useState();
+
+  const generateNews = () => {
+    fetch("https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=" + process.env.REACT_APP_API_KEY1)
+    .then((res) => res.json())
+    .then((data) => setNewsData(data.results))
+  }
+
+  useEffect(() => {
+    generateNews()
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Weather/>
+        <News newsData={newsData}/>
     </div>
   );
 }
